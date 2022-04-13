@@ -3,16 +3,62 @@
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
+  --neon-green: hsl(150, 100%, 66%);
+  --light-cyan: hsl(193, 38%, 86%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Manrope", sans-serif;
   min-height: 100vh;
-  background-color: var(--dark-grayish-blue);
+  background-color: var(--dark-blue);
   display: flex;
   align-items: center;
 }
 .container {
-  max-width: 380px;
-  background-color: var(--grayish-blue);
+  min-width: 375px;
   margin: 0 auto;
+}
+.card {
+  background-color: var(--dark-grayish-blue);
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 2rem 2rem;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; */
+}
+.img {
+  max-width: 100%;
+}
+#advice-id {
+  color: var(--neon-green);
+  text-transform: uppercase;
+}
+.quote {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--light-cyan);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: -20px;
 }
